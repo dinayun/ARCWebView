@@ -22,9 +22,9 @@ export default defineConfig({
     rollupOptions: {
       external: [
         '@nfdi4plants/arctrl',
-        "@primer/css",
-        "@primer/primitives",
-        "@primer/react",
+          /^@primer\/css($|\/)/,
+          /^@primer\/primitives($|\/)/,
+          /^@primer\/react($|\/)/,
         "marked",
         "mermaid",
         /^react($|\/)/,
