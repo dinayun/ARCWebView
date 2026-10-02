@@ -48,7 +48,8 @@
     "build:docker": "tsc -b && vite build --config vite.config.docker.js",
     "lint": "eslint .",
     "preview": "vite preview --config vite.config.app.ts",
-    "build:lib": "tsc -b && vite build --config vite.config.lib.ts"
+    "build:lib": "tsc -b && vite build --config vite.config.lib.ts",
+    "prepare": "npm run build:lib"
   },
   "dependencies": {
     "@nfdi4plants/arctrl": "^3.0.0-beta.16",
